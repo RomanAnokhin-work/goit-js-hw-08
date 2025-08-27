@@ -6,3 +6,11 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 24px;
 }
+
+.gallery-item {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.045);
+}
