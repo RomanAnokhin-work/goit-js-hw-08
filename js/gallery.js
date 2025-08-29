@@ -91,7 +91,7 @@ gallery.addEventListener("click", clickHandler);
 function clickHandler(event) {
   event.preventDefault();
 
-  if (event.target === event.currentTarget) {
+  if (event.target.nodeName !== "IMG") {
     return;
   }
   const instance = basicLightbox.create(`
